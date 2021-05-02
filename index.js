@@ -58,7 +58,7 @@ const init = async () => {
                 console.log(item.id);
                 let data = await downloadAndReadData(item);
                 console.log(`Data -> ${data}`);
-                //await downloadYoutubeVideo(data);
+                await downloadYoutubeVideo(data);
                 let matchFile = searchFile(data);
                 if(matchFile){
                     uploadFile(matchFile);
