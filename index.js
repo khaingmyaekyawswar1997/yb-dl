@@ -111,7 +111,7 @@ const downloadAndReadData = async file => {
 const downloadYoutubeVideo = async id => {
 
     await yd(`https://youtube.com/watch?v=${id}`, {
-        format: 'bestaudio+bestvideo',
+        format: 'bestvideo+bestaudio',
         output: `${id}UUUU%(name).%(ext)s`
     });
 }
